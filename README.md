@@ -19,13 +19,7 @@ Beberapa sistem canggih memiliki sensor tambahan untuk mendeteksi suhu, kelembab
 •	Mudah Digunakan: Sistem modern sering kali memiliki antarmuka yang ramah pengguna, baik melalui aplikasi atau kontrol suara.
 Sistem sensor garasi mobil ini sangat cocok untuk rumah modern yang mengutamakan keamanan, kenyamanan, dan teknologi terkini.
 
-## Docker
-
-Dillinger is very easy to install and deploy in a Docker container.
-
-By default, the Docker will expose port 8080, so change this within the
-Dockerfile if necessary. When ready, simply use the Dockerfile to
-build the image.
+## code
 
 ```sh
 1.	#include <Servo.h>
