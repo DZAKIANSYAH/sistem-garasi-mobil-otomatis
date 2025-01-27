@@ -76,7 +76,7 @@ build the image.
 ## Burn Bootloader Arduino
 Untuk meng-upload Bootloader Arduino, kali ini digunakan Arduino lain sebagai ISP (In-System Program). Sebenarnya, akan lebih baik apabila menggunakan device yang lebih proper seperti USB-ASP, namun kali ini memanfaatkan resource yang telah tersedia (meminjam Arduino Uno punya teman).
 Rangkaian untuk mem-burn Bootloader dapat dilihat seperti gambar dibawah. Intinya adalah menghubungkan pin SCK, MOSI, dan MISO, kontrol untuk Reset, dan pastinya catu daya 5V dan kristal osilator.
-
+ ![alt text](https://github.com/DZAKIANSYAH/sistem-garasi-mobil-otomatis/blob/main/Screenshot%202025-01-27%20203528.png?raw=true)
 ## Upload The Code
 
 Library yang dibutuhkan telah tersedia pada Arduino IDE. Pertama, adalah mengupload program ISP pada Arduino yang telah ada. Dapat dilakukan dengan cara memilih pada menu File > Examples > Arduino ISP > Arduino ISP lalu upload kode tersebut. Kemudian hubungkan seperti rangkaian diatas, lalu upload Bootloader pada menu Tools > Programmer > Arduino as ISP dan Tools > Burn Bootloader.
@@ -107,4 +107,4 @@ Setelah bootloader ter-install, prosedur untuk mengupload ke Arduino Clone seper
    [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
    [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
    [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
-   ![alt text](https://github.com/DZAKIANSYAH/sistem-garasi-mobil-otomatis/blob/main/Screenshot%202025-01-27%20203528.png?raw=true)
+  
