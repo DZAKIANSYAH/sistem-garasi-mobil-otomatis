@@ -15,8 +15,11 @@ Beberapa sistem canggih memiliki sensor tambahan untuk mendeteksi suhu, kelembab
 
 # Manfaat Sistem Sensor Garasi Mobil:
 •	Keamanan Meningkat: Mencegah pencurian atau akses ilegal ke garasi.
+
 •	Efisiensi Waktu: Proses otomatisasi mengurangi waktu yang dihabiskan untuk membuka dan menutup pintu garasi secara manual.
+
 •	Mudah Digunakan: Sistem modern sering kali memiliki antarmuka yang ramah pengguna, baik melalui aplikasi atau kontrol suara.
+
 Sistem sensor garasi mobil ini sangat cocok untuk rumah modern yang mengutamakan keamanan, kenyamanan, dan teknologi terkini.
 
 ## code
