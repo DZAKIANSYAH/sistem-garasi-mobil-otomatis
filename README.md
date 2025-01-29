@@ -26,48 +26,48 @@ Sistem sensor garasi mobil ini sangat cocok untuk rumah modern yang mengutamakan
 
 ```sh
 #include <Servo.h>
-	Servo servo;
-	int angle = 10;
-	// defines pins numbers
-	const int trigpin = 12;
-	const int echopin = 11;
-	// defines variables
-	long duration;
-	int distance;
-	void setup() {
-	       servo.attach(8);
-	       servo.write(angle);
-	pinMode(trigPin, OUTPUT); // Sets the trigpin as an Output
-	pinMode(echopin, INPUT); // Sets the echopin as an Input 
-	       Serial.begin(9600); // Starts the serial communication
-	}
-	void loop() {
-	// Clears the trigpin
-	digitalWrite(trigpin, LOW);
-	delayMicroseconds(2);
-	// Sets the trigPin on HIGH state for 10 micro seconds
-	digitalWrite(trigpin, HIGH);
-	delayMicroseconds(10);
-	digitalWrite(trigpin, LOW);
-	// Reads the echopin, returns the sound wave travel time in microseconds
-	duration pulseIn(echopin, HIGH);
-	// Calculating the distance
-	distance duration 0.034/2;
-	// Prints the distance on the Serial Monitor 
-	Serial.print("Distance: ");
-	Serial.println(distance);
-	delay(10);
+Servo servo;
+int angle = 10;
+// defines pins numbers
+const int trigpin = 12;
+const int echopin = 11;
+// defines variables
+long duration;
+int distance;
+void setup() {
+	servo.attach(8);
+	servo.write(angle);
+pinMode(trigPin, OUTPUT); // Sets the trigpin as an Output
+pinMode(echopin, INPUT); // Sets the echopin as an Input 
+	Serial.begin(9600); // Starts the serial communication
+}
+void loop() {
+// Clears the trigpin
+digitalWrite(trigpin, LOW);
+delayMicroseconds(2);
+// Sets the trigPin on HIGH state for 10 micro seconds
+digitalWrite(trigpin, HIGH);
+delayMicroseconds(10);
+digitalWrite(trigpin, LOW);
+// Reads the echopin, returns the sound wave travel time in microseconds
+duration pulseIn(echopin, HIGH);
+// Calculating the distance
+distance duration 0.034/2;
+// Prints the distance on the Serial Monitor 
+Serial.print("Distance: ");
+Serial.println(distance);
+delay(10);
 	
-	if(distance<20)
-	{
-	servo.write(180); 
-	delay(3000);
-	}
-	else
-	{
-	servo.write(0);
-	{
-	}
+if(distance<20)
+{
+servo.write(180); 
+delay(3000);
+}
+else
+{
+servo.write(0);
+{
+}
 ```
 # Implementasi
 ## Burn Bootloader Arduino
