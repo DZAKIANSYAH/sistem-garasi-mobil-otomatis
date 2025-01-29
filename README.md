@@ -25,49 +25,49 @@ Sistem sensor garasi mobil ini sangat cocok untuk rumah modern yang mengutamakan
 ## code
 
 ```sh
-#include <Servo.h>
-Servo servo;
-int angle = 10;
-// defines pins numbers
-const int trigpin = 12;
-const int echopin = 11;
-// defines variables
-long duration;
-int distance;
-void setup() {
-	servo.attach(8);
-	servo.write(angle);
-pinMode(trigPin, OUTPUT); // Sets the trigpin as an Output
-pinMode(echopin, INPUT); // Sets the echopin as an Input 
-	Serial.begin(9600); // Starts the serial communication
-}
-void loop() {
-// Clears the trigpin
-digitalWrite(trigpin, LOW);
-delayMicroseconds(2);
-// Sets the trigPin on HIGH state for 10 micro seconds
-digitalWrite(trigpin, HIGH);
-delayMicroseconds(10);
-digitalWrite(trigpin, LOW);
-// Reads the echopin, returns the sound wave travel time in microseconds
-duration pulseIn(echopin, HIGH);
-// Calculating the distance
-distance duration 0.034/2;
-// Prints the distance on the Serial Monitor 
-Serial.print("Distance: ");
-Serial.println(distance);
-delay(10);
-	
-if(distance<20)
-{
-servo.write(180); 
-delay(3000);
-}
-else
-{
-servo.write(0);
-{
-}
+1.	#include <Servo.h>
+2.	Servo servo;
+3.	int angle = 10;
+4.	// defines pins numbers
+5.	const int trigpin = 12;
+6.	const int echopin = 11;
+7.	// defines variables
+8.	long duration;
+9.	int distance;
+10.	void setup() {
+11.	       servo.attach(8);
+12.	       servo.write(angle);
+13.	pinMode(trigPin, OUTPUT); // Sets the trigpin as an Output
+14.	pinMode(echopin, INPUT); // Sets the echopin as an Input 
+15.	       Serial.begin(9600); // Starts the serial communication
+16.	}
+17.	void loop() {
+18.	// Clears the trigpin
+19.	digitalWrite(trigpin, LOW);
+20.	delayMicroseconds(2);
+21.	// Sets the trigPin on HIGH state for 10 micro seconds
+22.	digitalWrite(trigpin, HIGH);
+23.	delayMicroseconds(10);
+24.	digitalWrite(trigpin, LOW);
+25.	// Reads the echopin, returns the sound wave travel time in microseconds
+26.	duration pulseIn(echopin, HIGH);
+27.	// Calculating the distance
+28.	distance duration 0.034/2;
+29.	// Prints the distance on the Serial Monitor 
+30.	Serial.print("Distance: ");
+31.	Serial.println(distance);
+32.	delay(10);
+33.	
+34.	if(distance<20)
+35.	{
+36.	servo.write(180); 
+37.	delay(3000);
+38.	}
+39.	else
+40.	{
+41.	servo.write(0);
+42.	{
+43.	}
 ```
 # Implementasi
 ## Burn Bootloader Arduino
