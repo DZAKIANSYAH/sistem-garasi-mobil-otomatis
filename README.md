@@ -22,7 +22,7 @@ Beberapa sistem canggih memiliki sensor tambahan untuk mendeteksi suhu, kelembab
 
 Sistem sensor garasi mobil ini sangat cocok untuk rumah modern yang mengutamakan keamanan, kenyamanan, dan teknologi terkini.
 
-## code
+## Main Program
 
 ```sh
 1.	#include <Servo.h>
